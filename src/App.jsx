@@ -31,9 +31,9 @@ function App() {
     );
   };
 
-  useEffect(() => {
-    window.localStorage.setItem("contacts", JSON.stringify({ contacts }));
-  }, [contacts]);
+   useEffect(() => {
+  window.localStorage.setItem("contacts", JSON.stringify(contacts ));
+ }, [contacts]);
 
   return (
     <div className="phonebookWrap">
