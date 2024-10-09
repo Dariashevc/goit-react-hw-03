@@ -6,15 +6,12 @@ import SearchBox from "./components/SearchBox/SearchBox";
 import initialContacts from "./data/data.json";
 
 function App() {
-  const [contacts, setContacts] = useState(() => {
-    const contactsFromLSData = JSON.parse(
-      window.localStorage.getItem("contacts")
-    );
-    if (contactsFromLSData !== null && contactsFromLSData.contacts.length > 4) {
-      return contactsFromLSData.contacts;
-    }
-    return initialContacts;
-  });
+ const [contacts, setContacts] = useState(() => {
+  const contactsFromLSData = JSON.parse(
+   window.localStorage.getItem("contacts")
+  );
+  return contactsFromLSData ?? initialContacts;
+ });
 
   const [searchValue, setSearchValue] = useState("");
 
