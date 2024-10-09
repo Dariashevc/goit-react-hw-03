@@ -1,0 +1,40 @@
+.form {
+  border: 1px solid pink;
+  border-radius: 9px;
+  margin-bottom: 20px;
+  max-width: 400px;
+  padding: 20px 15px;
+  background-color: rgb(97, 161, 142);
+}
+.inputWrap {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.inputLabel {
+  margin-bottom: 5px;
+}
+.input {
+  max-width: 300px;
+  padding: 8px 5px;
+  border: 1px solid pink;
+  border-radius: 4px;
+  margin-right: 10px;
+  outline: transparent;
+}
+.inputErrorMsg {
+  color: rgb(142, 19, 60);
+}
+.submitBtn {
+  min-width: 150px;
+  padding: 10px 0;
+  color: rgb(209, 255, 239);
+  background-color: rgb(236, 143, 159);
+  border: none;
+  border-radius: 4px;
+}
+.submitBtn:hover,
+.submitBtn:focus {
+  background-color: pink;
+  outline: transparent;
+}
